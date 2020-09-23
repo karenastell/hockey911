@@ -3,10 +3,11 @@ import Location from '../components/Location';
 
 export default function PlayerSignUp() {
   const [formInfo, setFormInfo] = useState({});
-  const [goalie, setGoalie] = useState([]);
-  const [defender, setDefender] = useState([]);
-  const [forward, setForward] = useState([]);
-  const [ref, setRef] = useState([]);
+  const [goalie, setGoalie] = useState('');
+  const [defender, setDefender] = useState('')
+  const [forward, setForward] = useState('')
+  const [ref, setRef] = useState('')
+  const [position, setPosition]=useState([])
 
   const handleInputChange = (event) => {
     const { name, value } = event.target;
@@ -16,18 +17,13 @@ export default function PlayerSignUp() {
   };
 
   const handleCheckboxes = (event) => {
-    if ((event.target.value = 'Goalie')) {
-      setGoalie([event.target.value]);
-    }
-    if ((event.target.value = 'Defender')) {
-      setDefender([event.target.value]);
-    }
-    if ((event.target.value = 'Forward')) {
-      setForward([event.target.value]);
-    }
-    if ((event.target.value = 'Ref')) {
-      setRef([event.target.value]);
-    }
+      const { value } = event.target;
+      if (position.includes(value)) {
+        const newArray = position.filter((position) => position !== value);
+        setPosition(newArray);
+      } else {
+        setPosition([...position, value]);
+      }
   };
 
   return (
