@@ -27,7 +27,6 @@ export default function Contact(props) {
                 className='input is-success'
                 type='email'
                 placeholder='Email'
-                value='email@email.com'
               />
             </p>
           </div>

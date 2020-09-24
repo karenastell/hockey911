@@ -3,17 +3,21 @@ import Location from '../components/Location';
 import Contact from '../components/Contact';
 import Position from '../components/Position';
 import Availability from '../components/Availability';
+import TextTimes from '../components/TextTimes';
 
 export default function PlayerSignUp() {
-  const [formInfo, setFormInfo] = useState({});
+  const [contact, setContact] = useState({});
   const [position, setPosition] = useState([]);
-  const [availability, setAvailability]=useState([])
+  const [availability, setAvailability] = useState([]);
+  const [textTimes, setTextTimes] = useState([]);
+
+  let playerInfo = {}
 
   const handleInputChange = (event) => {
     const { name, value } = event.target;
 
     // use brackets to signify the name in the state
-    setFormInfo({ ...formInfo, [name]: value });
+    setContact({ ...contact, [name]: value });
   };
 
   const handleCheckboxes = (event) => {
@@ -26,7 +30,7 @@ export default function PlayerSignUp() {
     }
   };
 
-  const handleAvailability = (event)=>{
+  const handleAvailability = (event) => {
     const { value } = event.target;
     if (availability.includes(value)) {
       const newArray = availability.filter((avail) => avail !== value);
@@ -34,6 +38,29 @@ export default function PlayerSignUp() {
     } else {
       setAvailability([...availability, value]);
     }
+  };
+
+  const handleTextTimes = (event) => {
+    const { value } = event.target;
+    if (textTimes.includes(value)) {
+      const newArray = textTimes.filter((avail) => avail !== value);
+      setTextTimes(newArray);
+    } else {
+      setTextTimes([...textTimes, value]);
+    }
+  };
+
+  const handleSubmit = (event)=>{
+      event.preventDefault();
+
+        // make an object with all of the player's information
+        playerInfo = {
+            contact: contact,
+            position: position,
+            availability: availability,
+            textTimes: textTimes
+        }
+console.log(playerInfo);
   }
 
   return (
@@ -44,13 +71,14 @@ export default function PlayerSignUp() {
         <Contact handleInputChange={handleInputChange} />
         <Location handleInputChange={handleInputChange} />
         <Position handleCheckboxes={handleCheckboxes} />
-        <Availability handleAvailability={handleAvailability}/>
+        <Availability handleAvailability={handleAvailability} />
+        <TextTimes handleTextTimes={handleTextTimes} />
         <div className='field is-horizontal'>
           <div className='field-label'></div>
           <div className='field-body'>
             <div className='field'>
               <div className='control'>
-                <button className='button is-primary'>Submit</button>
+                <button className='button is-primary' onClick={handleSubmit}>Submit</button>
               </div>
             </div>
           </div>
