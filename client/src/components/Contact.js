@@ -11,7 +11,7 @@ export default function Contact(props) {
           <div className='field'>
             <p className='control is-expanded'>
               <input
-                onChange={props.handleInputChange}
+                onChange={props.handleContactInputChange}
                 name='name'
                 className='input'
                 type='text'
@@ -22,7 +22,7 @@ export default function Contact(props) {
           <div className='field'>
             <p className='control is-expanded'>
               <input
-                onChange={props.handleInputChange}
+                onChange={props.handleContactInputChange}
                 name='email'
                 className='input'
                 type='email'

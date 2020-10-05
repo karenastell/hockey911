@@ -4,7 +4,6 @@ import Contact from '../components/Contact';
 import Position from '../components/Position';
 import Availability from '../components/Availability';
 import TextTimes from '../components/TextTimes';
-import SiillLevel from '../components/SkillLevel'
 import SkillLevel from '../components/SkillLevel';
 
 export default function PlayerSignUp() {
@@ -12,9 +11,9 @@ export default function PlayerSignUp() {
   const [position, setPosition] = useState([]);
   const [availability, setAvailability] = useState([]);
   const [textTimes, setTextTimes] = useState([]);
-  const [skillLevel, setSkillLevel]=useState({})
+  const [skillLevel, setSkillLevel] = useState({});
 
-  let playerInfo = {}
+  let playerInfo = {};
 
   const handleContactInputChange = (event) => {
     const { name, value } = event.target;
@@ -60,29 +59,29 @@ export default function PlayerSignUp() {
     }
   };
 
-  const handleSubmit = (event)=>{
-      event.preventDefault();
+  const handleSubmit = (event) => {
+    event.preventDefault();
 
-        // make an object with all of the player's information
-        playerInfo = {
-            contact: contact,
-            position: position,
-            skillLevel: skillLevel,
-            availability: availability,
-            textTimes: textTimes
-        }
-console.log(playerInfo);
-  }
+    // make an object with all of the player's information
+    playerInfo = {
+      contact: contact,
+      position: position,
+      skillLevel: skillLevel,
+      availability: availability,
+      textTimes: textTimes,
+    };
+    console.log(playerInfo);
+  };
 
   return (
     <>
-      <h1 className='title is-1 has-text-centered'>Player SignUp</h1>
+      <h1 className='title is-1 has-text-centered'>Player Sign Up</h1>
 
       <div className='container'>
         <Contact handleContactInputChange={handleContactInputChange} />
         <Location handleContactInputChange={handleContactInputChange} />
         <Position handleCheckboxes={handleCheckboxes} />
-        <SkillLevel handleSkillInputChange={handleSkillInputChange}/>
+        <SkillLevel handleSkillInputChange={handleSkillInputChange} />
         <Availability handleAvailability={handleAvailability} />
         <TextTimes handleTextTimes={handleTextTimes} />
         <div className='field is-horizontal'>
@@ -90,7 +89,9 @@ console.log(playerInfo);
           <div className='field-body'>
             <div className='field'>
               <div className='control'>
-                <button className='button is-primary' onClick={handleSubmit}>Submit</button>
+                <button className='button is-primary' onClick={handleSubmit}>
+                  Submit
+                </button>
               </div>
             </div>
           </div>
