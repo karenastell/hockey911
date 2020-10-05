@@ -24,7 +24,7 @@ export default function Contact(props) {
               <input
                 onChange={props.handleInputChange}
                 name='email'
-                className='input is-success'
+                className='input'
                 type='email'
                 placeholder='Email'
               />

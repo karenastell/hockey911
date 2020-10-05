@@ -4,20 +4,30 @@ import Contact from '../components/Contact';
 import Position from '../components/Position';
 import Availability from '../components/Availability';
 import TextTimes from '../components/TextTimes';
+import SiillLevel from '../components/SkillLevel'
+import SkillLevel from '../components/SkillLevel';
 
 export default function PlayerSignUp() {
   const [contact, setContact] = useState({});
   const [position, setPosition] = useState([]);
   const [availability, setAvailability] = useState([]);
   const [textTimes, setTextTimes] = useState([]);
+  const [skillLevel, setSkillLevel]=useState({})
 
   let playerInfo = {}
 
-  const handleInputChange = (event) => {
+  const handleContactInputChange = (event) => {
     const { name, value } = event.target;
 
     // use brackets to signify the name in the state
     setContact({ ...contact, [name]: value });
+  };
+
+  const handleSkillInputChange = (event) => {
+    const { name, value } = event.target;
+
+    // use brackets to signify the name in the state
+    setSkillLevel({ ...skillLevel, [name]: value });
   };
 
   const handleCheckboxes = (event) => {
@@ -57,6 +67,7 @@ export default function PlayerSignUp() {
         playerInfo = {
             contact: contact,
             position: position,
+            skillLevel: skillLevel,
             availability: availability,
             textTimes: textTimes
         }
@@ -68,9 +79,10 @@ console.log(playerInfo);
       <h1 className='title is-1 has-text-centered'>Player SignUp</h1>
 
       <div className='container'>
-        <Contact handleInputChange={handleInputChange} />
-        <Location handleInputChange={handleInputChange} />
+        <Contact handleContactInputChange={handleContactInputChange} />
+        <Location handleContactInputChange={handleContactInputChange} />
         <Position handleCheckboxes={handleCheckboxes} />
+        <SkillLevel handleSkillInputChange={handleSkillInputChange}/>
         <Availability handleAvailability={handleAvailability} />
         <TextTimes handleTextTimes={handleTextTimes} />
         <div className='field is-horizontal'>
