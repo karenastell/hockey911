@@ -39,7 +39,7 @@ export default function Contact(props) {
             <div className='field has-addons'>
               <p className='control is-expanded'>
                 <input
-                  onChange={props.handleInputChange}
+                  onChange={props.handleContactInputChange}
                   name='phone'
                   className='input'
                   type='tel'

@@ -8,7 +8,7 @@ export default function SkillLevel(props) {
       </div>
       <div className='field-body'>
         <div className='field'>
-          <div className='control'>
+
             <div className='control'>
               <div className='select'>
                 <select
@@ -24,7 +24,7 @@ export default function SkillLevel(props) {
                 </select>
               </div>
             </div>
-          </div>
+
         </div>
       </div>
     </div>
