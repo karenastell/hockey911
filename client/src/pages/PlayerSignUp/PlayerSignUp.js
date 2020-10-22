@@ -5,8 +5,8 @@ import Position from '../../components/Position';
 import Availability from '../../components/Availability/Availability';
 import TextTimes from '../../components/TextTimes';
 import SkillLevel from '../../components/SkillLevel/SkillLevel';
-import Nav from '../../components/Nav/Nav'
-import Footer from '../../components/Footer/Footer'
+import Nav from '../../components/Nav/Nav';
+import Footer from '../../components/Footer/Footer';
 import './PlayerSignUp.css';
 
 export default function PlayerSignUp() {
@@ -78,7 +78,7 @@ export default function PlayerSignUp() {
 
   return (
     <div className='background'>
-      <Nav/>
+      <Nav />
       <div className='container mt-5 mb-5 whiteText'>
         <h1 className='whiteText title is-1 has-text-centered'>
           Player Sign Up
@@ -96,7 +96,10 @@ export default function PlayerSignUp() {
             <div className='field-body'>
               <div className='field'>
                 <div className='control'>
-                  <button className='button submit-btn mb-5' onClick={handleSubmit}>
+                  <button
+                    class='button mb-5 mt-5 submit-btn is-dark is-inverted is-outlined'
+                    onClick={handleSubmit}
+                  >
                     Submit
                   </button>
                 </div>
@@ -105,7 +108,7 @@ export default function PlayerSignUp() {
           </div>
         </div>
       </div>
-      <Footer/>
+      <Footer />
     </div>
   );
 }
