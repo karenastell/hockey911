@@ -1,11 +1,16 @@
 .whiteText {
-    color: white;
+  color: white;
 }
 
 .fontSize {
-    font-size: 100px;
+  font-size: 100px;
 }
 
-.td {
-    background-color: grey;
+.table-background {
+  background-color: #d5d5d5 !important;
 }
+
+.th {
+  color: white !important;
+}
+

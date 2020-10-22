@@ -1,8 +1,9 @@
 import React from 'react';
+import './TimeSlots.css';
 
 export default function TimeSlots(props) {
   return (
-    <tr>
+    <tr className='table-row-color'>
       <td>
         <div className='field'>
           <div className='control'>

@@ -1,5 +1,5 @@
 import React from 'react';
-import TimeSlots from '../TimeSlots';
+import TimeSlots from '../TimeSlots/TimeSlots';
 import './Availability.css';
 
 
@@ -11,7 +11,7 @@ export default function Availability(props) {
       </div>
       <div className='field-body'>
         <table className='table is-bordered'>
-          <thead>
+          <thead className='table-background'>
             <tr>
               <th>
                 <abbr title='Sunday'>Sun</abbr>
