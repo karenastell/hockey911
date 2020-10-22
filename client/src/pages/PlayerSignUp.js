@@ -2,9 +2,10 @@ import React, { useState, useEffect } from 'react';
 import Location from '../components/Location';
 import Contact from '../components/Contact';
 import Position from '../components/Position';
-import Availability from '../components/Availability';
+import Availability from '../components/Availability/Availability';
 import TextTimes from '../components/TextTimes';
 import SkillLevel from '../components/SkillLevel';
+import './PlayerSignUp.css';
 
 export default function PlayerSignUp() {
   const [contact, setContact] = useState({});
@@ -74,10 +75,10 @@ export default function PlayerSignUp() {
   };
 
   return (
-    <>
-      <h1 className='title is-1 has-text-centered'>Player Sign Up</h1>
+    <div className='container mt-5 mb-5 whiteText'>
+      <h1 className='whiteText title is-1 has-text-centered'>Player Sign Up</h1>
 
-      <div className='container'>
+      <div>
         <Contact handleContactInputChange={handleContactInputChange} />
         <Location handleContactInputChange={handleContactInputChange} />
         <Position handleCheckboxes={handleCheckboxes} />
@@ -89,7 +90,7 @@ export default function PlayerSignUp() {
           <div className='field-body'>
             <div className='field'>
               <div className='control'>
-                <button className='button is-primary' onClick={handleSubmit}>
+                <button className='button is-danger' onClick={handleSubmit}>
                   Submit
                 </button>
               </div>
@@ -97,6 +98,6 @@ export default function PlayerSignUp() {
           </div>
         </div>
       </div>
-    </>
+    </div>
   );
 }

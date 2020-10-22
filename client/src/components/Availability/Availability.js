@@ -1,5 +1,7 @@
 import React from 'react';
-import TimeSlots from './TimeSlots';
+import TimeSlots from '../TimeSlots';
+import './Availability.css';
+
 
 export default function Availability(props) {
   return (
