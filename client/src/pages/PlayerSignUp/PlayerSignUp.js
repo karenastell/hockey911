@@ -6,6 +6,7 @@ import Availability from '../../components/Availability/Availability';
 import TextTimes from '../../components/TextTimes';
 import SkillLevel from '../../components/SkillLevel/SkillLevel';
 import Nav from '../../components/Nav/Nav'
+import Footer from '../../components/Footer/Footer'
 import './PlayerSignUp.css';
 
 export default function PlayerSignUp() {
@@ -95,7 +96,7 @@ export default function PlayerSignUp() {
             <div className='field-body'>
               <div className='field'>
                 <div className='control'>
-                  <button className='button submit-btn' onClick={handleSubmit}>
+                  <button className='button submit-btn mb-5' onClick={handleSubmit}>
                     Submit
                   </button>
                 </div>
@@ -104,6 +105,7 @@ export default function PlayerSignUp() {
           </div>
         </div>
       </div>
+      <Footer/>
     </div>
   );
 }

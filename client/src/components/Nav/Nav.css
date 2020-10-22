@@ -1,5 +1,5 @@
 .nav-background {
-    border-bottom: 2px solid white;
+    border-bottom: 2px solid red;
     position: relative;
     display: -ms-flexbox;
     display: flex;
@@ -14,4 +14,8 @@
 
 .puck {
     width: 50px;
+}
+
+.white-text{
+    color: white;
 }

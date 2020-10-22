@@ -1,0 +1,26 @@
+.foot {
+  border-top: 2px solid blue;
+  max-height: 50px !important;
+  color: white;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  /* position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%; */
+  margin: 0px !important;
+  /* padding: 15px !important */
+}
+
+.footer-links {
+  color: white;
+}
+
+.footer-links:hover {
+  color: red;
+  text-decoration: none;
+}
+
+.foot-font {
+  /* font-weight: 600; */
+}
