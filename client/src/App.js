@@ -5,8 +5,8 @@ import Home from "./pages/Home";
 import Signup from "./pages/Signup";
 import Login from "./pages/Login";
 import Members from "./pages/Members";
-import PlayerSignUp from "./pages/PlayerSignUp"
-import LeagueSignUp from './pages/LeagueSignUp'
+import PlayerSignUp from "./pages/PlayerSignUp/PlayerSignUp"
+import LeagueSignUp from './pages/LeagueSignUp/LeagueSignUp'
 
 // Even though this is the App.js file, in the end we are not exactly exporting
 // the App component.  We actually set up the app component to implement our react

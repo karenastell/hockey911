@@ -1,4 +1,5 @@
 import React from 'react';
+import './SkillLevel.css';
 
 export default function SkillLevel(props) {
   return (
@@ -12,7 +13,7 @@ export default function SkillLevel(props) {
             <div className='control'>
               <div className='select'>
                 <select
-                  className='skill-level-select'
+                  className='skill-level-select input-border-skill'
                   name='SillLevel'
                   onChange={props.handleSkillInputChange}
                 >

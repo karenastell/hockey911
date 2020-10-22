@@ -1,4 +1,5 @@
 import React from 'react';
+import './Location.css';
 
 export default function Location(props) {
   return (
@@ -10,7 +11,7 @@ export default function Location(props) {
         <div className='field'>
           <p className='control'>
             <input
-              className='input'
+              className='input input-border-loc'
               id='city'
               type='text'
               placeholder='City'
@@ -26,7 +27,7 @@ export default function Location(props) {
           {/* <select className="select-state width-div" name="state" onChange={props.handleContactInputChange || props.handleProfileInfoChange} value={props.state ? props.state : undefined}
               > */}
           <select
-            className='select-state width-div'
+            className='select-state width-div input-border-loc state'
             name='state'
             onChange={props.handleContactInputChange}
           >

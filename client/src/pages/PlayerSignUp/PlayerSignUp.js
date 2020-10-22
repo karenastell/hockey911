@@ -1,10 +1,11 @@
 import React, { useState, useEffect } from 'react';
-import Location from '../components/Location';
-import Contact from '../components/Contact';
-import Position from '../components/Position';
-import Availability from '../components/Availability/Availability';
-import TextTimes from '../components/TextTimes';
-import SkillLevel from '../components/SkillLevel';
+import Location from '../../components/Location/Location';
+import Contact from '../../components/Contact/Contact';
+import Position from '../../components/Position';
+import Availability from '../../components/Availability/Availability';
+import TextTimes from '../../components/TextTimes';
+import SkillLevel from '../../components/SkillLevel/SkillLevel';
+import Nav from '../../components/Nav/Nav'
 import './PlayerSignUp.css';
 
 export default function PlayerSignUp() {
@@ -75,24 +76,29 @@ export default function PlayerSignUp() {
   };
 
   return (
-    <div className='container mt-5 mb-5 whiteText'>
-      <h1 className='whiteText title is-1 has-text-centered'>Player Sign Up</h1>
+    <div className='background'>
+      <Nav/>
+      <div className='container mt-5 mb-5 whiteText'>
+        <h1 className='whiteText title is-1 has-text-centered'>
+          Player Sign Up
+        </h1>
 
-      <div>
-        <Contact handleContactInputChange={handleContactInputChange} />
-        <Location handleContactInputChange={handleContactInputChange} />
-        <Position handleCheckboxes={handleCheckboxes} />
-        <SkillLevel handleSkillInputChange={handleSkillInputChange} />
-        <Availability handleAvailability={handleAvailability} />
-        <TextTimes handleTextTimes={handleTextTimes} />
-        <div className='field is-horizontal'>
-          <div className='field-label'></div>
-          <div className='field-body'>
-            <div className='field'>
-              <div className='control'>
-                <button className='button is-danger' onClick={handleSubmit}>
-                  Submit
-                </button>
+        <div>
+          <Contact handleContactInputChange={handleContactInputChange} />
+          <Location handleContactInputChange={handleContactInputChange} />
+          <Position handleCheckboxes={handleCheckboxes} />
+          <SkillLevel handleSkillInputChange={handleSkillInputChange} />
+          <Availability handleAvailability={handleAvailability} />
+          <TextTimes handleTextTimes={handleTextTimes} />
+          <div className='field is-horizontal'>
+            <div className='field-label'></div>
+            <div className='field-body'>
+              <div className='field'>
+                <div className='control'>
+                  <button className='button submit-btn' onClick={handleSubmit}>
+                    Submit
+                  </button>
+                </div>
               </div>
             </div>
           </div>

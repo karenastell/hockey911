@@ -1,4 +1,5 @@
 import React from 'react';
+import './Contact.css';
 
 export default function Contact(props) {
   return (
@@ -13,7 +14,7 @@ export default function Contact(props) {
               <input
                 onChange={props.handleContactInputChange}
                 name='name'
-                className='input'
+                className='input input-border'
                 type='text'
                 placeholder='Name'
               />
@@ -24,7 +25,7 @@ export default function Contact(props) {
               <input
                 onChange={props.handleContactInputChange}
                 name='email'
-                className='input'
+                className='input input-border'
                 type='email'
                 placeholder='Email'
               />
@@ -41,7 +42,7 @@ export default function Contact(props) {
                 <input
                   onChange={props.handleContactInputChange}
                   name='phone'
-                  className='input'
+                  className='input input-border'
                   type='tel'
                   placeholder='Your phone number'
                 />

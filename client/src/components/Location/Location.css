@@ -1,0 +1,10 @@
+.input-border-loc {
+    border-style: outset !important;
+    border-width: 2px !important;
+    background-color: #EDEDED !important;
+}
+
+.state {
+    color: lightgrey !important;
+
+}

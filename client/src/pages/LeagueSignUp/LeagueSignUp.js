@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
-import Location from '../components/Location';
-import Contact from '../components/Contact';
-import SkillLevel from '../components/SkillLevel';
-import Rink from '../components/Rink';
-import DateTime from '../components/DateTime'
+import Location from '../../components/Location/Location';
+import Contact from '../../components/Contact/Contact';
+import SkillLevel from '../../components/SkillLevel/SkillLevel';
+import Rink from '../../components/Rink';
+import DateTime from '../../components/DateTime'
 
 export default function LeagueSignUp() {
   const [contact, setContact] = useState({});
