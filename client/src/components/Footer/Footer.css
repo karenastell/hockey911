@@ -1,15 +1,15 @@
 .foot {
-  border-top: 2px solid #778DC3;
+  background: linear-gradient(to left, #333, #333 50%, #eee 100%);
+  border-top: 2px solid #778dc3;
   max-height: 50px !important;
   color: white;
-  padding-top: 5px;
-  padding-bottom: 5px;
-  /* position: fixed;
-    left: 0;
-    bottom: 0;
-    width: 100%; */
-  margin: 0px !important;
-  /* padding: 15px !important */
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  /* margin: 0px !important; */
+  margin-top: 20px;
+  padding: 15px;
 }
 
 .footer-links {
@@ -21,6 +21,6 @@
   text-decoration: none;
 }
 
-.foot-font {
-  /* font-weight: 600; */
+.foot-p {
+  height: 100px;
 }

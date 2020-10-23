@@ -80,10 +80,11 @@ export default function PlayerSignUp() {
     <div className='background'>
       <Nav />
       <div className='container mt-5 mb-5 whiteText'>
-        <h1 className='whiteText title is-1 has-text-centered'>
-          Player Sign Up
-        </h1>
-
+        <div className='mb-6'>
+          <h1 className='whiteText title is-1 has-text-centered'>
+            Player Sign Up
+          </h1>
+        </div>
         <div>
           <Contact handleContactInputChange={handleContactInputChange} />
           <Location handleContactInputChange={handleContactInputChange} />
