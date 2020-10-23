@@ -1,11 +1,12 @@
 import React from 'react';
+import './Day.css';
 
 export default function Day(props) {
   return (
     <div className='field-body'>
       <div className='field'>
-        <div className='control'>
-          <label className='checkbox'>
+        <div className='control '>
+          <label className='checkbox white-days'>
             <input
               onChange={props.handleCheckboxes}
               value='Sunday'
@@ -17,7 +18,7 @@ export default function Day(props) {
       </div>
       <div className='field'>
         <div className='control'>
-          <label className='checkbox'>
+          <label className='checkbox white-days'>
             <input
               onChange={props.handleCheckboxes}
               value='Monday'
@@ -29,7 +30,7 @@ export default function Day(props) {
       </div>
       <div className='field'>
         <div className='control'>
-          <label className='checkbox'>
+          <label className='checkbox white-days'>
             <input
               onChange={props.handleCheckboxes}
               value='Tuesday'
@@ -41,7 +42,7 @@ export default function Day(props) {
       </div>
       <div className='field'>
         <div className='control'>
-          <label className='checkbox'>
+          <label className='checkbox white-days'>
             <input
               onChange={props.handleCheckboxes}
               value='Wednesday'
@@ -53,7 +54,7 @@ export default function Day(props) {
       </div>
       <div className='field'>
         <div className='control'>
-          <label className='checkbox'>
+          <label className='checkbox white-days'>
             <input
               onChange={props.handleCheckboxes}
               value='Thursday'
@@ -65,7 +66,7 @@ export default function Day(props) {
       </div>
       <div className='field'>
         <div className='control'>
-          <label className='checkbox'>
+          <label className='checkbox white-days'>
             <input
               onChange={props.handleCheckboxes}
               value='Friday'
@@ -77,7 +78,7 @@ export default function Day(props) {
       </div>
       <div className='field'>
         <div className='control'>
-          <label className='checkbox'>
+          <label className='checkbox white-days'>
             <input
               onChange={props.handleCheckboxes}
               value='Saturday'

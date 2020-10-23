@@ -1,0 +1,10 @@
+.background-league {
+    background: linear-gradient(to left, #333, #333 50%, #eee 100%);
+  padding-bottom: 30px;
+  height: 1000px;
+  }
+
+  .white-text-league {
+    color: white !important;
+  }
+

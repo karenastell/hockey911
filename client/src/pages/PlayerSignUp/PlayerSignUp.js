@@ -77,7 +77,7 @@ export default function PlayerSignUp() {
   };
 
   return (
-    <div className='background'>
+    <div className='background-player'>
       <Nav />
       <div className='container mt-5 mb-5 whiteText'>
         <div className='mb-6'>
@@ -98,7 +98,7 @@ export default function PlayerSignUp() {
               <div className='field'>
                 <div className='control'>
                   <button
-                    class='button mb-5 mt-5 submit-btn is-dark is-inverted is-outlined'
+                    className='button mb-5 mt-5 submit-btn is-dark is-inverted is-outlined'
                     onClick={handleSubmit}
                   >
                     Submit

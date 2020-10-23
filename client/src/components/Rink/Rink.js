@@ -12,7 +12,7 @@ export default function Rink(props) {
               <input
                 onChange={props.handleContactInputChange}
                 name='rink'
-                className='input'
+                className='input input-border'
                 type='text'
                 placeholder='Name'
               />

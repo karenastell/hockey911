@@ -1,5 +1,6 @@
 import React from 'react';
-import Day from './Day';
+import Day from '../Day/Day';
+import './DateTime.css';
 
 export default function DateTime(props) {
   return (
@@ -10,7 +11,7 @@ export default function DateTime(props) {
       <Day handleCheckboxes={props.handleCheckboxes} />
       <div className='field'>
         <p className='control is-expanded'>
-          <input className='input is-success' name='time' type='time' onChange={props.handleTimeInputChange} />
+          <input className='input input-border' name='time' type='time' onChange={props.handleTimeInputChange} />
         </p>
       </div>
     </div>

@@ -1,0 +1,5 @@
+.input-border {
+    border-style: outset !important;
+    border-width: 2px !important;
+    background-color: #EDEDED !important;
+}
