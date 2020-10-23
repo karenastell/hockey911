@@ -15,14 +15,14 @@ export default function Nav() {
             width='112'
             height='28'
           />
-          <span className='ml-2 white-text'>Hockey 911</span>
+          <span className='ml-2'>Hockey 911</span>
         </a>
       </div>
       <div class='navbar-menu'>
         <div className='navbar-start'>
-          <a className='navbar-item white-text'>Find a Skate</a>
+          <a className='navbar-item'>Find a Skate</a>
 
-          <a className='navbar-item white-text'>Profile</a>
+          <a className='navbar-item'>Profile</a>
         </div>
 
         <div class='navbar-end'>*login logout buttons*</div>
