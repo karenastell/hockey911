@@ -7,7 +7,7 @@ export default function Nav() {
   return (
     <nav className='nav-background' role='navigation' aria-label='main navigation'>
       <div className='navbar-brand'>
-        <a className='navbar-item' href='https://bulma.io'>
+        <a className='navbar-item' href='#'>
           <img
             src='./puck.png'
             className='puck'
@@ -15,12 +15,12 @@ export default function Nav() {
             width='112'
             height='28'
           />
-          <span className='ml-2'>Hockey 911</span>
+          <span className='ml-2 white-text'>Hockey 911</span>
         </a>
       </div>
       <div class='navbar-menu'>
-        <div className='navbar-start'>
-          <a className='navbar-item'>Find a Skate</a>
+        <div className='navbar-start white-text'>
+          <a className='navbar-item '>Find a Skate</a>
 
           <a className='navbar-item'>Profile</a>
         </div>
